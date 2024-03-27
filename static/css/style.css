@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --color-main: #5e3bee;
+  --color-main-hover: #542df1;
+  --color-second: #e62872;
+  --color-bg-second: #f0e6f3;
+  --color-bg-main: #ffffff;
+  --color-third: #ebdeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Custom style */
+
+.btn-outline-primary {
+  --bs-btn-border-color: var(--color-main);
+  --bs-btn-color: var(--color-main);
+}
+
+.btn-outline-primary:hover {
+  --bs-btn-hover-border-color: var(--color-main);
+  --bs-btn-hover-bg: var(--color-main);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-main);
+  --bs-btn-border-color: var(--color-main);
+}
+
+.btn-primary:hover {
+  --bs-btn-hover-bg: var(--color-main-hover);
+}
+
+.form-control {
+  border: 2px solid var(--color-third);
+}
+
+.form-control:focus {
+  border-color: var(--color-main);
+  box-shadow: rgba(53, 11, 221, 0.25);
+}
+
+.navbar-solid {
+  background-color: var(--color-bg-main);
+  box-shadow: 0 8px 8px #6b6b6b4d;
+  transition: 0.5s;
+}
+
+/* Custom Component style */
+
+#hero-section h1 span {
+  color: var(--color-main);
+}
+#about-section p span {
+  color: var(--color-main);
+}
+.about-description {
+  margin-top: 150px;
+}
+
+#hero-section h1 {
+  /* font-size: calc(2.5rem + 1vw); */
+  font-size: 55px;
+}
+
+#hero-section {
+  background-color: var(--color-bg-second);
+}
+#about-section {
+  padding-top: 40px;
+  margin-top: 70px;
+  padding-bottom: 0px;
+}
+#portfolio-section {
+  margin: 100px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--color-bg-second);
+}
+footer {
+  background-color: var(--color-bg-second);
+}
